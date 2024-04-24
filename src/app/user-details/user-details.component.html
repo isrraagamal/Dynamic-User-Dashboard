@@ -1,0 +1,12 @@
+<div *ngIf="user" class="mt-4 text-center p-5">
+  <div class="content py-5">
+    <div class="justify-content-center">
+      <img [src]="user.avatar" alt="Avatar" class="card-img-top text-center my-3">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ user.first_name }} {{ user.last_name }}</h5>
+      <p class="card-text">{{ user.email }}</p>
+      <button class="btn btn-secondary w-50" (click)="goBack()">Back</button>
+    </div>
+  </div>
+</div>
